@@ -80,3 +80,18 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# less highlighting
+export LESS_TERMCAP_mb=$'\e[1;31m'       # start blinking (bold red)
+export LESS_TERMCAP_md=$'\e[1;38;5;81m'  # start bold (aqua)
+export LESS_TERMCAP_me=$'\e[0m'          # end mode
+export LESS_TERMCAP_so=$'\e[38;5;235;48;5;220m'  # start standout (yellow background, dark text)
+export LESS_TERMCAP_se=$'\e[0m'          # end standout
+export LESS_TERMCAP_us=$'\e[1;32m'       # start underline (bold green)
+export LESS_TERMCAP_ue=$'\e[0m'          # end underline
+export LESS_TERMCAP_mr=$'\e[7;38;5;235m' # start reverse mode (dark text)
+export LESS_TERMCAP_mh=$'\e[38;5;81m'    # dim (aqua)
+export LESS_TERMCAP_ZN=$'\e[38;5;235m'   # end reverse mode (dark text)
+export LESS_TERMCAP_ZV=$'\e[38;5;220m'   # start visual (yellow)
+export LESS_TERMCAP_ZO=$'\e[0m'          # end visual
+export LESS_TERMCAP_ZW=$'\e[38;5;235m'   # start visual non-printing (dark text)
